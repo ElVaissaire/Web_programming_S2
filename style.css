@@ -280,7 +280,7 @@ footer img{
     }
 }
 
-@media screen (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .footer_content{
         width: 320px;
     }
