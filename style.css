@@ -11,25 +11,76 @@ by Eléonore Vaissaire
 .header{
     height: 50px;
     margin: auto;
+    margin-right: 5%;
     padding: 10px;
     text-align: right;
     font-size: small;
     
 }
 
+
+
+.banner_container{
+    width: 90%;
+    max-height: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid grey;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: black;
+    margin: auto;
+}
+.banner_slider{
+    /*width: 100%s;
+    margin: auto;*/
+    overflow: hidden;
+    position: relative;
+    max-height: 800px;
+    max-width: 1413px;
+    top: auto;
+    margin: auto;
+}
+#image_slider{
+    position: relative;
+    height: auto;
+    list-style: none;
+    overflow: hidden;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+#image_slider li{
+    float: left;
+    list-style: none;
+}
+.navigate{
+    position: absolute;
+    top: 50%;
+    height: 30px;
+    width: 50px;
+    opacity: 0.6;
+
+}
+.navigate:hover{
+    opacity: 0.9;
+}
+#prev{
+    background: #000 no-repeat center;
+    left: 0px;
+}
+#next{
+    background: #000 no-repeat center;
+    right: 0px;
+}
+
+
+
 .flexbox{
     display: flex;
     flex-direction: column;
     margin: auto;
-}
-
-.banner{
-    width: 100%s;
-    margin: auto;
-}
-#dynamic_header{
-    width: 100%;
-    height: 100%;
 }
 
 .intro{
@@ -55,14 +106,21 @@ by Eléonore Vaissaire
     float: left;
 }
 
-.projects{
-    display: flex;
-    width: 100%;
-}
+
 .latest_project{
     text-align: left;
     margin-left: 20%;
 }
+.projects{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.picture{
+    margin: auto;
+}
+
 
 .reviews{
     padding: 10%;

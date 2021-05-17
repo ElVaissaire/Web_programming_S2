@@ -4,24 +4,33 @@
         <!-- Head of the site -->
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="slider.js"></script>
         <title>Luxury Residences</title>
     </head>
     <body>
         <!-- Body of the web page -->
 
         <div class="header">
-            <span class="phone_number">Phone Number</span>
-            <span class="links">Links</span>
+            <span class="phone_number">Phone Number | </span>
+            <span class="links">Links | </span>
             <span class="menu">Menu</span>
         </div>
 
-        <div class="flexbox"> 
-            <div class="banner">
-                <figure>
-                    <img src="louvre_pyramid.jpg" alt="Louvres's pyramid" id="dynamic_header" />
-                </figure>
+        <div class="banner_container"> 
+            <div class="banner_slider">
+                <ul id="image_slider">
+                    <li><img src="louvre_pyramid.jpg" alt="Louvres's pyramid"/></li>
+                    <li><img src="taj_mahal.jpg" alt="Taj Mahal"></li>
+                    <li><img src="cite_phoceenne.jpg" alt="Cité Phocéenne"></li>
+                    <li><img src="presidents_usa.jpg" alt="USA's presidents"></li>
+                </ul>
+                <span class="navigate" id="prev"></span>
+                <span class="navigate" id="next"></span>
             </div>
+        </div>
 
+
+        <div class="flexbox">
             <div class="intro">
                 <div class="text_part">
                     <h2>We are the Leader in the Architectural</h2>
