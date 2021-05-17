@@ -1,0 +1,76 @@
+/*
+style.css
+
+by Eléonore Vaissaire
+*/
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    height: 50px;
+    margin: auto;
+    padding: 10px;
+    text-align: right;
+    font-size: small;
+    
+}
+
+.flexbox{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.banner{
+    width: 100%s;
+    margin: auto;
+}
+#dynamic_header{
+    width: 100%;
+    height: 100%;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+}
+.text_part{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.image_part{
+    width: 30%;
+}
+#archi_img{
+    width: 100%;
+    height: 100%;
+}
+.years_experience{
+    display: flex;
+}
+.element:nth-child(1){
+    float: left;
+}
+
+.projects{
+    display: flex;
+    width: 100%;
+}
+.latest_project{
+    text-align: left;
+    margin-left: 20%;
+}
+
+.reviews{
+    padding: 10%;
+    background-color: antiquewhite;
+    display: flex;
+}
+.review{
+    background-color: white;
+    margin: 5%;
+}
+
