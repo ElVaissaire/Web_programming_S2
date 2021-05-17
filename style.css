@@ -9,13 +9,15 @@ by Eléonore Vaissaire
 }
 
 .header{
-    height: 50px;
+    height: 5%;
     margin: auto;
     margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10px;
     padding: 10px;
     text-align: right;
     font-size: small;
-    
+    background-color: aliceblue;
 }
 
 
@@ -31,6 +33,7 @@ by Eléonore Vaissaire
     box-sizing: border-box;
     background: black;
     margin: auto;
+    margin-bottom: 10%;
 }
 .banner_slider{
     /*width: 100%s;
@@ -86,14 +89,22 @@ by Eléonore Vaissaire
 .intro{
     display: flex;
     justify-content: center;
+    margin-bottom: 10%;
 }
 .text_part{
     width: 30%;
     display: flex;
     flex-direction: column;
+    background-color: aliceblue;
+    padding: 2%;
+}
+.header_intro{
+    width: 100%;
 }
 .image_part{
     width: 30%;
+    display: flex;
+    flex-direction: column;
 }
 #archi_img{
     width: 100%;
@@ -101,34 +112,187 @@ by Eléonore Vaissaire
 }
 .years_experience{
     display: flex;
+    justify-content: center;
+    margin-top: 30%;
 }
 .element:nth-child(1){
     float: left;
+    padding: 2%;
+    border: 3px solid rgb(40, 40, 104);
+    align-self: center;
+    font-size: 100px;
+    color: rgb(40, 40, 104);
+}
+.element:nth-child(2){
+    padding: 2%;
+    align-self: center;
+    font-weight: bold;
+    font-size: larger;
 }
 
 
 .latest_project{
     text-align: left;
     margin-left: 20%;
+    margin-bottom: 3%;
 }
 .projects{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
     align-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
 }
-.picture{
-    margin: auto;
+.picture:hover{
+    opacity: 0.9;
 }
+.picture .text_img{
+    position: relative;
+    top: -20%;
+}
+.text_img{
+    background: rgba(40, 40, 104, 0.5);
+    text-align: center;
+    color: white;
+    padding: 2%;
+}
+
 
 
 .reviews{
-    padding: 10%;
-    background-color: antiquewhite;
+    padding: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: aliceblue;
     display: flex;
+    flex-direction: column;
+    margin: 5%;
+    
+}
+.header_review{
+    width: 100%;
+}
+.reviews_flexbox{
+    display: flex;
+    justify-content: center;
+}
+.quote{
+    text-align: right;
+    font-size: 50px;
 }
 .review{
     background-color: white;
     margin: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    padding-bottom: 1%;
 }
 
+.news{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.header_news{
+    margin-left: 20%;
+    margin-bottom: 3%;
+}
+.span_news{
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+.news_container{
+    width: 20%;
+    border: 3px solid rgb(40, 40, 104);
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(206, 206, 245);
+}
+.news_container:hover{
+    opacity: 0.3;
+}
+
+
+
+footer{
+    flex-shrink: 0;
+    margin-top: 100px;
+    border-top: 1px dashed #000;
+    width: 100%;
+    background-color: aliceblue;
+    color: #333;
+}
+.footer_content{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    padding: 50px 0 100px;
+}
+.block_footer_services{
+    width: 25%;
+    margin: 0 30px;
+}
+
+footer h3{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.list_media,
+.list_services{
+    list-style-type: none;
+}
+.list_services li{
+    padding: 2px 0;
+}
+.list_media li{
+    padding: 2px 0;
+}
+
+footer img{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 1300px){
+    .footer_content{
+        width: 700px;
+        flex-wrap: wrap;
+    }
+    .block_footer_services{
+        width: 40%;
+        margin: 0 0;
+    }
+    .block_footer_services:nth-child(1),
+    .block_footer_services:nth-child(2){
+        margin-bottom: 50px;
+    }
+}
+
+@media screen (max-width: 800px) {
+    .footer_content{
+        width: 320px;
+    }
+    .block_footer_services{
+        width: 300px;
+        margin: 30px 30px;
+    }
+    .block_footer_services:nth-child(1),
+    .block_footer_services:nth-child(2){
+        margin-bottom: 30px;
+    }
+    .block_footer_services:nth-child(1){
+        margin-top: 0;
+    }
+}
